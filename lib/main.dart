@@ -1,19 +1,43 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app5b/screens/description_place_screen.dart';
+import 'package:travel_app5b/screens/review_list.dart';
+import 'package:travel_app5b/screens/gradient_back.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MainApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MainApp extends StatelessWidget {
+  final namePlace = 'Dowilli Ella';
+  final descriptionText = ' Entre el exito y la derrota solo hay un paso';
+
+  const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: DescriptionPlaceScreen(),
+        // body: DescriptionPLaceScreen(
+        //   namePlace: namePlace,
+        //   stars: 5,
+        //   descriptionPlace: descriptionText, star: 5,
+        // ),
+        body: Stack(
+          children: [
+            ListView(
+              children: [
+                DescriptionPlaceScreen(
+                  descriptionPlace: descriptionText,
+                  namePlace: namePlace,
+                  stars: 5,
+                ),
+                const ReviewList()
+              ],
+            ),
+            const GradientBack(),
+          ],
+        ),
       ),
     );
   }

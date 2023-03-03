@@ -1,6 +1,5 @@
 name: travel_app5b
 description: A new Flutter project.
-publish_to: 'none'
 version: 0.1.0
 
 environment:
@@ -9,6 +8,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+    cupertino_icons: ^1.0.2
   google_fonts: ^4.0.3
 
 dev_dependencies:
@@ -18,3 +18,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/img/img1.jpg
+    - assets/img/img2.jpg
+    - assets/img/img3.jpg
+    - assets/img/img4.jpeg
