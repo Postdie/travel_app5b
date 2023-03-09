@@ -11,25 +11,25 @@ class ReviewList extends StatelessWidget {
       children: [
         Review(
           pathImage: 'assets/img/img1.jpg',
-          user: 'Tomoe',
+          user: 'Hopper',
           details: '1 review 5 photos',
           commet: 'This is an amazing place in Sri Lanka',
         ),
         Review(
-          pathImage: 'assets/img/img.jpg',
-          user: 'Misaki',
+          pathImage: 'assets/img/img2.jpg',
+          user: 'Beksinsky',
           details: '1 review 5 photos',
           commet: 'This is an amazing place in Sri Lanka',
         ),
         Review(
           pathImage: 'assets/img/img3.jpg',
-          user: 'Nanami Momosono',
+          user: 'Munch',
           details: '1 review 5 photos',
           commet: 'This is an amazing place in Sri Lanka',
         ),
         Review(
           pathImage: 'assets/img/img4.jpeg',
-          user: 'Aome Higurashi',
+          user: 'Monet',
           details: '1 review 5 photos',
           commet: 'This is an amazing place in Sri Lanka',
         ),

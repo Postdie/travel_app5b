@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:travel_app5b/screens/button_navigate.dart';
 
 class DescriptionPlaceScreen extends StatelessWidget {
   final String descriptionPlace;
@@ -30,7 +31,7 @@ class DescriptionPlaceScreen extends StatelessWidget {
 
     final description = Container(
       margin: const EdgeInsets.only(
-        top: 10.0,
+        top: 60.0,
         left: 10.0,
         right: 20.0,
       ),
@@ -52,7 +53,7 @@ class DescriptionPlaceScreen extends StatelessWidget {
             right: 20.0,
           ),
           child: const Text(
-            "Hola Fatt",
+            "Bienvenido",
             style: titleStyle,
             textAlign: TextAlign.left,
           ),
@@ -64,9 +65,11 @@ class DescriptionPlaceScreen extends StatelessWidget {
       ],
     );
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         titleAndStarts,
         description,
+        const ButtonNavigate(buttonText: 'mas informacion...'),
       ],
     );
   }
