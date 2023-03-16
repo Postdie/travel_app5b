@@ -22,7 +22,7 @@ class DescriptionPlaceScreen extends StatelessWidget {
     //Alt + z = acomodar el texto
 
     final star = Container(
-      margin: const EdgeInsets.only(top: 200.0, right: 3.0),
+      margin: const EdgeInsets.only(top: 150.0, right: 3.0),
       child: const Icon(
         Icons.star,
         color: Colors.amber,
@@ -48,7 +48,7 @@ class DescriptionPlaceScreen extends StatelessWidget {
       children: [
         Container(
           margin: const EdgeInsets.only(
-            top: 200.0,
+            top: 500.0,
             left: 20.0,
             right: 20.0,
           ),
